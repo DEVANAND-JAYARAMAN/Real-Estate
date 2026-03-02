@@ -2,6 +2,8 @@
 
 A modern, responsive real estate website for **SKeva Real Estate** focused on property discovery and lead generation across **Coimbatore, Tamil Nadu**.
 
+https://devanand-jayaraman.github.io/Real-Estate/
+
 ## Business Profile
 
 - **Company:** SKeva Real Estate
@@ -76,3 +78,4 @@ No backend/database is included in this version.
 
 - Admin panel actions update listing data in localStorage only.
 - Clearing browser storage resets listings/leads to default behavior.
+

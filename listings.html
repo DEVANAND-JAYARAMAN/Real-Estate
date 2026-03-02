@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Property Listings | SKeva Real Estate</title>
+  <meta name="description" content="Browse property listings in Coimbatore with budget, location, and property type filters." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="listings">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-title">SKeva Real Estate</span>
+        <span class="brand-tag">Low Budget &amp; High Budget Properties</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="listings.html">Listings</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html" class="admin-link">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="inner-page">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Property Listings</h1>
+        <p>Explore verified properties across Coimbatore by budget, area, and type.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters card">
+          <label>Budget
+            <select id="filter-budget">
+              <option value="all">All Budgets</option>
+              <option value="low">Under ₹80 Lakhs</option>
+              <option value="mid">₹80 Lakhs - ₹1.5 Cr</option>
+              <option value="high">₹1.5 Cr - ₹3 Cr</option>
+              <option value="premium">Above ₹3 Cr</option>
+            </select>
+          </label>
+          <label>Location
+            <select id="filter-location">
+              <option value="all">All Locations</option>
+              <option value="Saravanampatti">Saravanampatti</option>
+              <option value="RS Puram">RS Puram</option>
+              <option value="Peelamedu">Peelamedu</option>
+              <option value="Kovaipudur">Kovaipudur</option>
+              <option value="Vadavalli">Vadavalli</option>
+            </select>
+          </label>
+          <label>Property Type
+            <select id="filter-type">
+              <option value="all">All Types</option>
+              <option value="Apartment">Apartment</option>
+              <option value="Villa">Villa</option>
+              <option value="Plot">Plot</option>
+              <option value="Commercial">Commercial</option>
+            </select>
+          </label>
+        </div>
+        <div id="listings-grid" class="property-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h4>SKeva Real Estate</h4><p>Low Budget &amp; High Budget Properties</p></div>
+      <div><h4>Contact</h4><p><a href="tel:+919159230158">+91 91592 30158</a></p><p>Service Area: Tamil Nadu – All Over Coimbatore</p></div>
+      <div><h4>Social</h4><p><a href="https://instagram.com/skeva_realestate" target="_blank" rel="noopener">Instagram @skeva_realestate</a></p></div>
+    </div>
+    <p class="copyright">© <span id="year"></span> SKeva Real Estate. All rights reserved.</p>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/919159230158" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+  <script src="script.js" defer></script>
+</body>
+</html>
